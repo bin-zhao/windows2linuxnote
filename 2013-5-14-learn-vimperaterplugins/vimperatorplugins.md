@@ -15,9 +15,7 @@
 #vsResharper插件:
 ##目的:代码生成工具 http://www.jetbrains.com/resharper/index.html #cd瑞士军刀
 ##介绍:
-<pre><code>
-    Cd Deluxe is a drop-in replacement for the standard cd ("change directory") command. It supports easier access to the history of directories visited. It is kind of a "Swiss Army Knife" of changing directories. It is designed to increase productivity by speeding up the workflow of command line use. It is available for Windows and Unix style operating systems.
-</code></pre>
+<pre><code>Cd Deluxe is a drop-in replacement for the standard cd ("change directory") command. It supports easier access to the history of directories visited. It is kind of a "Swiss Army Knife" of changing directories. It is designed to increase productivity by speeding up the workflow of command line use. It is available for Windows and Unix style operating systems.</code></pre>
 
 ##链接:
 [cdd](http://www.plan10.com/cdd/)

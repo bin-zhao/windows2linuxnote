@@ -7,4 +7,4 @@
     yiluoyang = 1ymn070v
 
 ##vim文档编码
-    [vim encoding](http://edyfox.codecarver.org/html/vim_fileencodings_detection.html)
+[vim encoding](http://edyfox.codecarver.org/html/vim_fileencodings_detection.html)

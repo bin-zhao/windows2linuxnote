@@ -1,0 +1,25 @@
+#!/bin/sh
+#===============================================================================
+#
+#          FILE: upload_win2linux.sh
+# 
+#         USAGE: ./upload_win2linux.sh 
+# 
+#   DESCRIPTION: 
+# 
+#       OPTIONS: ---
+#  REQUIREMENTS: ---
+#          BUGS: ---
+#         NOTES: ---
+#        AUTHOR: YOUR NAME (), 
+#  ORGANIZATION: 
+#       CREATED: 2013-5-15 18:14:59 中国标准时间
+#      REVISION:  ---
+#===============================================================================
+
+set -o nounset                              # Treat unset variables as an error
+
+git add *
+git commit -m "auto upload"
+git push -u origin master
+

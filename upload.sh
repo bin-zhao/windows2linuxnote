@@ -21,8 +21,11 @@ set -o nounset                              # Treat unset variables as an error
 
 git add *
 git commit -m "auto upload"
+
 echo "git 状态显示"
+
 git status
+
 echo "git 状态显示完毕"
 git push -u origin master
 

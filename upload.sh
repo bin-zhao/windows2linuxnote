@@ -29,8 +29,6 @@ git status
 echo "git 状态显示完毕"
 git push -u origin master
 
-<<<<<<< HEAD
-=======
 #touch README.md
 #git init
 #git add README.md
@@ -38,4 +36,3 @@ git push -u origin master
 #git remote add origin git@github.com:xiaoxiaoyi/windows2linuxnote.git
 #git push -u origin master
 #
->>>>>>> f48733ecd3bda7623bc718b1c56c3a08b499625a

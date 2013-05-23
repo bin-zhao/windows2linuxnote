@@ -55,7 +55,7 @@
 	apt-cyg -m ftp://ftp.cygwinports.org/pub/cygwinports find php
 
 ##Link
-    http://zengrong.net/post/1792.htm
+    [apt-cyg](http://zengrong.net/post/1792.htm)
 
 ##Q:cygwin octopress
 ##A:

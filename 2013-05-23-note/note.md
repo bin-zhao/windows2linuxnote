@@ -55,7 +55,7 @@
 	apt-cyg -m ftp://ftp.cygwinports.org/pub/cygwinports find php
 
 ##Link
-    [apt-cyg](http://zengrong.net/post/1792.htm)
+[apt-cyg](http://zengrong.net/post/1792.htm)
 
 ##Q:cygwin octopress
 ##A:
@@ -66,13 +66,13 @@
     alias less='/bin/less -r'
     alias ls='/bin/ls -F --color=tty --show-control-chars'
 ##Link:
-    http://cygwin.com/cygwin-ug-net/setup-files.html
+[http://cygwin.com/cygwin-ug-net/setup-files.html](http://cygwin.com/cygwin-ug-net/setup-files.htm)
 
 ##Q:cygwin git http
 ##A:
     Install the ca-certificates package to install those
 ##Link:
-    http://christopherpeplin.com/2013/01/cygwin-git-https/
+[http://christopherpeplin.com/2013/01/cygwin-git-https/](http://christopherpeplin.com/2013/01/cygwin-git-https/)
     
 ##Q:cygwin ctags
 ##A:

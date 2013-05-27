@@ -19,14 +19,19 @@
 
 set -o nounset                              # Treat unset variables as an error
 
+echo "before upload git status"
+git status
+
+echo "git add *"
 git add *
+
+echo "git commit"
 git commit -m "auto upload"
 
-echo "git 状态显示"
+echo "after upload git status"
 
 git status
 
-echo "git 状态显示完毕"
 git push -u origin master
 
 #touch README.md

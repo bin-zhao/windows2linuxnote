@@ -19,16 +19,16 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-echo "before upload git status"
+echo "#####################before upload git status#####################b"
 git status
 
-echo "git add *"
+echo "#####################git add *#####################b"
 git add *
 
-echo "git commit"
+echo "#####################git commit#####################b"
 git commit -m "auto upload"
 
-echo "after upload git status"
+echo "#####################after upload git status#####################b"
 
 git status
 

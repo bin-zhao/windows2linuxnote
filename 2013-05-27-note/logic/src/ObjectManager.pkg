@@ -1,0 +1,34 @@
+#include <cocos2d.h>
+#include <string>
+#include <list>
+
+class ObjectManager
+{
+public:
+	/*
+		得到当前对象总数
+	*/
+	unsigned int GetObjectNumber();
+	/*
+		得到指定位置的对象信息
+	*/
+	IObject* GetObjectByPos(unsigned int pos);
+	/*
+		得到指定Id的对象信息
+	*/
+	IObject* GetObjectById(std::string id);
+
+public:
+	/*
+		插入对象
+	*/
+	void  InsertObject(IObject* pObject);
+	/*
+		删除对象
+	*/
+	void  DeleteObject(IObject* pObject);
+	/*
+		删除所有对象
+	*/
+	void  DeleteAllObject();
+};

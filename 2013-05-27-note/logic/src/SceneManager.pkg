@@ -1,0 +1,58 @@
+#include <cocos2d.h>
+#include <string>
+#include <list>
+
+class SceneManager
+{
+public:
+	/*
+		设置场景Tick加速比例
+	*/
+	void  SetTickSpeedFactor(float speed);
+	/*
+		得到场景Tick加速比例
+	*/
+	float GetTickSpeedFactor();
+	/*
+		设置场景暂停标志位
+	*/
+	void  SetTickPaused(bool bPause);
+	/*
+		得到场景暂停标志位
+	*/
+	bool  GetTickPaused();
+
+public:
+	/*
+		得到场景跟节点
+	*/
+	cocos2d::CCNode* GetSceneRootLayer();
+	/*
+		得到场景背景层根节点
+	*/
+	cocos2d::CCNode* GetSceneBackgroundLayer();
+	/*
+		得到场景效果播放层
+	*/
+	cocos2d::CCNode* GetSceneEffectLayer();
+	/*
+		得到场景反色层根节点
+	*/
+	cocos2d::CCNode* GetSceneInverseLayer();
+
+public:
+	/*
+		屏幕反色处理
+	*/
+	void  InverseScene();
+	/*
+		振屏操作处理
+	*/
+	void  ShakeScene();
+
+public:
+	/*
+		根据动画名称得到CCAnimation
+	*/
+	cocos2d::CCAnimation* GetAnimtionByName(std::string name);
+};

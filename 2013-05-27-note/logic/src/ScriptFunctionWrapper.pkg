@@ -1,0 +1,32 @@
+
+NinjiaTribeApp* Lua_GetNinjiaTribeApp();
+
+EngineSystem*   Lua_GetEngineSystem();
+
+DBSystem*       Lua_GetDBSystem();
+
+EventSystem*    Lua_GetEventSystem();
+
+GuideSystem*    Lua_GetGuideSystem();
+
+UISystem*       Lua_GetUISystem();
+
+SoundSystem*    Lua_GetSoundSystem();
+
+ObjectManager*  Lua_GetObjectManager();
+
+SceneManager*   Lua_GetSceneManager();
+
+IWindow*        Lua_GetWindow(int iWindowType);
+
+const char*     Lua_GetSysLangTextById(int langId);
+
+LocalPlayerDataManager*  Lua_GetLocalPlayerDataManager();
+
+CCNode*         Lua_GetCCNodeByName(char* pName);
+CCSprite*       Lua_GetCCSpriteByName(char* pName);
+CCLabelTTF*     Lua_GetCCLabelTTFByName(char* pName);
+CCMenuItem*     Lua_GetCCMenuItemByName(char* pName);
+
+void            Lua_SetCCLabelTTFText(char* pLabelName, int sysLangId);
+

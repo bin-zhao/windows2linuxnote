@@ -1,0 +1,12 @@
+#include <cocos2d.h>
+#include <string>
+#include <list>
+
+class LocalPlayerDataManager
+{
+public:
+	/*
+		ÉèÖÃĞèÒª´æÅÌ
+	*/
+	void  NeedSaveToDisk();
+};

@@ -1,0 +1,41 @@
+#include <string>
+#include <list>
+$#include "../include/IProcedure.h"
+$#include "../include/LogoProcedure.h"
+$#include "../include/LoginProcedure.h"
+$#include "../include/LobbyProcedure.h"
+$#include "../include/ArenaProcedure.h"
+$#include "../include/SelectServerProcedure.h"
+
+
+class NinjiaTribeApp
+{
+public:
+	enum
+	{
+		_TYPED_APP_CHANNEL_UNKOWN_,   // 未知渠道类型
+		_TYPED_APP_CHANNEL_WIN32_,    // Win32渠道
+		_TYPED_APP_CHANNEL_IOS_,      // IOS渠道
+		_TYPED_APP_CHANNEL_HUAWEI_,   // HuaWei渠道
+		_TYPED_APP_CHANNEL_GFAN_,     // 机锋渠道
+		_TYPED_APP_CHANNEL_XIAOMI_,   // 小米渠道
+		_TYPED_APP_CHANNEL_91_,       // 91渠道
+	};
+	
+public:
+	LogoProcedure*         m_pLogoProcedure;     // LOGO处理流程
+	SelectServerProcedure* m_pSelServerProcedure;// 选择服务器处理流程
+	LoginProcedure*        m_pLoginProcedure;    // 登陆处理流程
+	LobbyProcedure*        m_pLobbyProcedure;    // 大厅处理流程
+	ArenaProcedure*        m_pArenaProcedure;    // 竞技场处理流程
+	
+public:
+	std::string  GetVersion();
+	void         SetActive(bool bActive);
+	bool         IsActive();
+	void         SetRun(bool bRun);
+	int          GetFPS();
+	int          GetAppChannel();
+	int          GetAppWidth();
+	int          GetAppHeight();
+};

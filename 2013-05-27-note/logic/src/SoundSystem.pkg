@@ -1,0 +1,29 @@
+#include <string>
+#include <list>
+
+class SoundSystem
+{
+public:
+	enum
+	{
+		_TYPED_EFFECTSOUND_UNKOWN_,        // 未知音效类型
+		_TYPED_EFFECTSOUND_COMMONBUTTON_,  // 按钮点击音效
+		_TYPED_EFFECTSOUND_ITEM_,          // 道具音效
+		_TYPED_EFFECTSOUND_EFFECT_,        // 特效音效
+		_TYPED_EFFECTSOUND_MONSTER_,       // 怪物死亡音效
+		_TYPED_EFFECTSOUND_OTHER_,         // 其他音效类型
+		_TYPED_EFFECTSOUND_NUMBER_,        // 音效总数
+	};
+	
+public:
+	void   MuteBackgroundMusic(bool bMute);
+	void   MuteEffectSound(bool bMute);
+	bool   IsBackgroundMusicMute();
+	bool   IsEffectSoundMute();
+
+public:
+	void   PlayEffect(int effectType, std::string soundName, bool bLoop);
+	void   StopEffect(int effectType);
+	void   PlayBackgroundMusic(std::string soundName);
+	void   StopBackgroundMusic();
+};

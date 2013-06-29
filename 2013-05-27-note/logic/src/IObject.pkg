@@ -1,0 +1,56 @@
+#include <cocos2d.h>
+#include <string>
+#include <list>
+
+class IObject
+{
+public:
+	enum
+	{
+		_TYPED_OBJECT_UNKOWN_,        // 未知的对象类型
+		_TYPED_OBJECT_EFFECT_,        // 特效对象类型
+		_TYPED_OBJECT_ITEM_,          // 道具对象类型
+	};
+	
+public:
+	/*
+		设置对象Id
+	*/
+	void  SetObjectId(std::string objectId);
+	/*
+		得到对象Id
+	*/
+	std::string GetObjectId();
+	/*
+		设置对象类型
+	*/
+	void  SetObjectType(int objectType);
+	/*
+		得到对象类型
+	*/
+	int   GetObjectType();
+	/*
+		设置对象子类型
+	*/
+	void  SetObjectSubType(int objectSubType);
+	/*
+		得到对象子类型
+	*/
+	int   GetObjectSubType();
+	/*
+		设置对象是否可用
+	*/
+	void  SetIsValid(bool bValid);
+	/*
+		得到对象是否可用
+	*/
+	bool  GetIsValid();
+	/*
+		设置是否参与碰撞计算
+	*/
+	void  SetIsCollision(bool bIsCollision);
+	/*
+		是否参与碰撞计算
+	*/
+	bool  GetIsCollision();
+};

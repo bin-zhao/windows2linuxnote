@@ -1,0 +1,55 @@
+#include <string>
+#include <list>
+
+class ArenaProcedure
+{
+public:
+	enum
+	{
+		_TYPED_ARENAPROCEDURE_UNKOWN_,   // 未知的竞技场子流程
+		_TYPED_ARENAPROCEDURE_BEGIN_,    // 竞技场开始子流程
+		_TYPED_ARENAPROCEDURE_COOLDOWN_, // 竞技场倒计时子流程
+		_TYPED_ARENAPROCEDURE_GAMING_,   // 竞技场游戏中子流程
+		_TYPED_ARENAPROCEDURE_PAUSE_,    // 竞技场暂停流程
+		_TYPED_ARENAPROCEDURE_END_,      // 竞技场结束子流程
+		_TYPED_ARENAPROCEDURE_NUMBER_,   // 竞技场子流程个数
+	};
+	
+public:
+	/*
+		得到当前子流程
+	*/
+	int   GetSubType();
+
+public:
+	/*
+		切换到大厅处理流程
+	*/
+	void  ChangeToLobbyProcedure();
+
+public:
+	/*
+		开始倒计时
+	*/
+	void  StartCoolDown();
+	/*
+		开始游戏
+	*/
+	void  StartGame();
+	/*
+		游戏结束
+	*/
+	void  EndGame(bool bWin);
+	/*
+		暂停游戏
+	*/
+	void  PauseGame();
+	/*
+		恢复游戏
+	*/
+	void  ResumeGame();
+	/*
+		重玩游戏
+	*/
+	void  ReplayGame();
+};

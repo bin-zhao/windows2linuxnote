@@ -1,0 +1,15 @@
+#include <string>
+#include <list>
+
+class LobbyProcedure
+{
+public:
+	/*
+		切换到游戏处理流程
+	*/
+	void  ChangeToArenaProcedure();
+	/*
+		切换到登陆处理流程
+	*/
+	void  ChangeToLoginProcedure();
+};

@@ -1,0 +1,15 @@
+#include <string>
+#include <list>
+
+class LoginProcedure
+{
+public:
+	/*
+		切换到大厅处理流程
+	*/
+	void  ChangeToLobbyProcedure();
+	/*
+		切换到选服处理流程
+	*/
+	void  ChangeToSelectServerProcedure();
+};

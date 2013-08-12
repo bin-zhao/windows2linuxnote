@@ -235,3 +235,6 @@ c/ You're history, original line! Muhahaha!
 因为附加、插入和更改行命令需要在多行输入，所以将把它们输入到一个文本 sed 脚本中，然后通过使用 '-f' 选项告诉 sed 执行它们。使用其它方法将命令传递给 sed 会出现问题。
 
  
+
+
+tr '[A-Z]|[a-z]' '[a-z]|[A-Z]' <<<"$str"

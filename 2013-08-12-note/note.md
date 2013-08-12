@@ -238,3 +238,7 @@ c/ You're history, original line! Muhahaha!
 
 
 tr '[A-Z]|[a-z]' '[a-z]|[A-Z]' <<<"$str"
+
+   例如：UPPERCASE=$(echo $VARIABLE | tr '[a-z]' '[A-Z]')   (把VARIABLE的小写转换成大写)
+
+            LOWERCASE=$(echo $VARIABLE | tr '[A-Z]' '[a-z]')   (把VARIABLE的大写转换成小写)
